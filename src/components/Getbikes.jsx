@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function Getbikes() {
-  const serverUrl = import.meta.env.VITE_backendUrl;
+  const serverUrl = import.meta.env.backendUrl;
   const [bikes, setBikes] = useState([]);
   const [editingBike, setEditingBike] = useState(null);
   const [newBike, setNewBike] = useState({
